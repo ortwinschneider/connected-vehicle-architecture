@@ -1,7 +1,43 @@
+= Solution Patterns: Template Name
+:page-layout: home
+:sectnums:
+:sectlinks:
+:doctype: book
+
+The *Red Hat Connected Vehicle Architecture* is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage. 
+
+This architecture *can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment* supporting various use cases like _OTA deployments, Driver monitoring, AI/ML_ and others.
+
+It aims to *showcase an end-to-end workflow*, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, *training AI/ML models* and deploying containers through a DevSecOps pipeline and by leveraging GitOps to the edge.
+
+include::content-overview.adoc[]
+
+[#story-behind]
 == The story behind this solution pattern
+To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the software-defined vehicle (SDV)—a vehicle whose features and functions are primarily supported and upgradable through software. 
 
-A description of the story that was used to build the demo and architectures of this SP.
+The advancement of SDVs brings along benefits, including increased comfort and safety with automated driving, personalized driver experiences, and support for new revenue streams. 
 
-== The Solution
+But the realization of SDVs comes with many challenges related to software architecture, safety certification, cybersecurity, software reusability, and an available talent pool. 
 
-This is a summary of the solution
+A strong open source strategy not only complements existing models in the industry but also has the very potential to help automakers address oncoming challenges and emerge as industry leaders.
+
+[#cloud-native-approach]
+== In-Vehicle Cloud-native approach
+It's not only about in-vehicle architecture anymore, it's about the digital life cycle. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.
+
+Microservices’ architecture inherently supports cloud-native development. In addition to container and microservices technologies, the actualization of cloud-native includes application definition, orchestration, management, runtime, provisioning, and mainly DevOps—a set of tools and practices that support, automate, and speed up continuous integration and continuous delivery (CI/CD) and deployment of cloud-based applications. 
+
+[#use-cases]
+== Use cases
+Common use cases that can be address with this architecture are:
+
+- Connecting vehicles to a Hybrid Cloud Backend
+- Applying location based configuration to a fleet of devices (vehicles)
+- Realtime Stream Aggregation
+- Processing IoT data with OpenShift Serverless
+- Implementing Over-the-Air (OTA) updates
+
+[#more-pattern]
+== Explore more solution patterns
+include::https://raw.githubusercontent.com/redhat-solution-patterns/redhat-solution-patterns.github.io/master/documentation/modules/ROOT/pages/solution-pattern-list.adoc[]

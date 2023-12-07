@@ -1,7 +1,7 @@
 name: solution-pattern-template
-title: Template Tutorial
+title: Connected Vehicle Architecture
 version: master
 nav:
   - modules/ROOT/nav.adoc
 
-start_page: ROOT:index.adoc
+start_page: ROOT:01-pattern.adoc

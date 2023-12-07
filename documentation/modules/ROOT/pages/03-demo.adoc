@@ -12,23 +12,110 @@ Include here content related to potential existing demos: blogs, articles, recor
 [#demo-video]
 === Watch a demonstration
 
-In this video you can see xpto:
+video::4zRzp2jrd6E[youtube, width=800, height=480]
 
-video::3yULVMdqJ98[youtube, width=800, height=480]
+Next, you can learn how to install this solution pattern.
 
-Next, you can learn how to walkthrough this demo.
+== Install the solution pattern
 
-== Run the demonstration
+You can use the `install.sh` script to install this Solution Pattern.
 
-=== Before getting started
-To run this demo, you will need xpto. Adding to that, make sure to have:
+=== Prerequisites
 
-* ABC
-* XYZ
-* XPTO
+Before executing the `install.sh` script, make sure you have the following ready:
 
-=== Installing the demo
-Installation guide and basic test of the demo installation if needed
+* https://github.com/sa-mw-dach/bobbycar[A clone of the Connected Vehicle Architecture Git repository]
+* A running OpenShift cluster environment (OCP on-premise, ROSA, OCP on IBM Cloud, ARO, OCP Dedicated) or https://developers.redhat.com/products/openshift-local/overview[OpenShift Local]
+* You have `cluster-admin` privileges for the OpenShift cluster
+* https://docs.openshift.com/container-platform/4.12/cli_reference/openshift_cli/getting-started-cli.html#installing-openshift-cli[OpenShift CLI (oc)]
+* https://helm.sh/docs/intro/install/[Helm CLI]
+* A valid https://developers.google.com/maps/documentation/javascript/get-api-key[Google Maps API Key]
+* Gather the API and App domain of your OpenShift Cluster:
+** App domain example: `apps.cluster-zxf6m.zxf6m.sandbox1856.opentlc.com`
+** API domain example: `api.cluster-zxf6m.zxf6m.sandbox1856.opentlc.com`
 
-=== Walkthrough guide
-How to run through the demo
+=== Running the installation
+
+1. Provide the properties in `install_cleanup_vars.sh`, i.e.:
+
+[source,console]
+----
+# The namespace to deploy the solution pattern in
+NAMESPACE=bobbycar
+# The clusters app domain without port
+APP_DOMAIN=apps.cluster-pnc6l.pnc6l.sandbox52.opentlc.com
+# The clusters api domain without port
+API_DOMAIN=api.cluster-pnc6l.pnc6l.sandbox52.opentlc.com
+
+# Google Maps API key - https://developers.google.com/maps/documentation/javascript/get-api-key
+GOOGLE_API_KEY=<MyGoogleMapsApiKey>
+# OpenWeatherMap API Key - https://openweathermap.org/api
+OWM_WEATHER_API_KEY=<MyApiKey>
+# https://www.ibm.com/products/environmental-intelligence-suite/data-packages
+IBM_WEATHER_API_KEY=<MyApiKey>
+
+# Installs OpenShift Serverless in the cluster
+INSTALL_KNATIVE=true
+# Installs the required namespaced operators: AMQ Streams, AMQ Broker, Datagrid, Camel-K
+INSTALL_OPERATORS=true
+# Deletes the BobbycarZone CRD when executing ./cleanup.sh
+DELETE_CRD=true
+
+# Helm Release names
+HELM_INFRA_RELEASE_NAME=infra
+HELM_APP_RELEASE_NAME=apps
+HELM_SERVERLESS_RELEASE_NAME=serverless
+----
+
+Mandatory fields are:
+
+* NAMESPACE
+* APP_DOMAIN
+* API_DOMAIN
+* GOOGLE_API_KEY
+
+The `weather-api` fields are optional:
+
+* OWM_WEATHER_API_KEY and/or
+* IBM_WEATHER_API_KEY
+
+If you haven't installed OpenShift Serverless in your cluster, you can set `INSTALL_KNATIVE=true`, this will install OpenShift Serverless.
+
+`INSTALL_OPERATORS=true` will install the
+
+* AMQ Streams
+* AMQ Broker
+* Camel-K
+* Datagrid
+
+operators in the local namespace you'll deploy this solution pattern into.
+
+When using https://developers.redhat.com/products/openshift-local/overview[OpenShift Local],
+you can use the following values:
+
+[source,console]
+----
+NAMESPACE=bobbycar
+APP_DOMAIN=apps-crc.testing
+API_DOMAIN=api-crc-testing
+----
+
+Then run the `install.sh` script:
+
+[source,console]
+----
+  ./install.sh 
+----
+
+If you want to manually install Bobbycar in your own environment (step-by-step), please follow these https://github.com/sa-mw-dach/bobbycar/tree/master/helm[installation instructions!]
+
+=== Clean up the installation
+
+Run the `cleanup.sh` script to uninstall the solution pattern
+
+If you also want to remove the `BobbycarZone CRD`, set `DELETE_CRD=true` in the `install_cleanup_vars.sh` script.
+
+[source,console]
+----
+  ./cleanup.sh 
+----

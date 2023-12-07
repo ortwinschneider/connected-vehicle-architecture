@@ -3,21 +3,21 @@
 
 [tabs]
 ====
-xref:index.adoc[{counter:module}. Solution Pattern]::
+xref:01-pattern.adoc[{counter:module}. Solution Pattern]::
 +
-xref:index.adoc#use-cases[{counter:submodule1}. Use cases] +
-xref:01-pattern.adoc#_the_story_behind_this_solution_pattern[{counter:submodule1}. The story behind this solution pattern] +
-xref:index.adoc#use-cases[{counter:submodule1}. Use cases] +
-xref:01-pattern#_the_solution[{counter:submodule1}. The solution] +
-xref:index.adoc#content_overview[{counter:submodule1}. Content overview] +
-xref:index.adoc#_explore_more_solution_patterns[{counter:submodule1}. Explore more solution patterns]
+xref:01-pattern.adoc#story-behind[{counter:submodule1}. The story behind this solution pattern] +
+xref:01-pattern.adoc#cloud-native-approach[{counter:submodule1}. In-Vehicle cloud-native approach] +
+xref:01-pattern.adoc#use-cases[{counter:submodule1}. Use cases] +
+xref:01-pattern.adoc#more-pattern[{counter:submodule1}. Explore more solution patterns]
 +
 xref:02-architecture.adoc[{counter:module}. Architecture]::
 +
-xref:02-architecture.adoc#_common_challenges[{counter:submodule2}. Common challenges] +
+xref:02-architecture.adoc#core_concepts[{counter:submodule2}. Core Concepts] + 
+xref:02-architecture.adoc#drogue_stack[{counter:submodule2}. Drogue Connectivity Stack] +
+xref:02-architecture.adoc#cloud_processing[{counter:submodule2}. Cloud side processing] +
 xref:02-architecture.adoc#tech_stack[{counter:submodule2}. Technology stack] +
 xref:02-architecture.adoc#in_depth[{counter:submodule2}. An in-depth look at the solution's architecture] +
-xref:02-architecture.adoc#more_tech[{counter:submodule2}. More about the technology stack]
+xref:02-architecture.adoc#tech_stack[{counter:submodule2}. More about the technology stack]
 +
 xref:03-demo.adoc[{counter:module}. Demonstration]::
 +
