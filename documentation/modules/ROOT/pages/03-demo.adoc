@@ -1,4 +1,4 @@
-= Solution Pattern: Name Template
+= Red Hat Connected Vehicle Architecture
 :sectnums:
 :sectlinks:
 :doctype: book
@@ -16,10 +16,12 @@ video::4zRzp2jrd6E[youtube, width=800, height=480]
 
 Next, you can learn how to install this solution pattern.
 
+[#installation]
 == Install the solution pattern
 
 You can use the `install.sh` script to install this Solution Pattern.
 
+[#install-prereq]
 === Prerequisites
 
 Before executing the `install.sh` script, make sure you have the following ready:
@@ -34,6 +36,7 @@ Before executing the `install.sh` script, make sure you have the following ready
 ** App domain example: `apps.cluster-zxf6m.zxf6m.sandbox1856.opentlc.com`
 ** API domain example: `api.cluster-zxf6m.zxf6m.sandbox1856.opentlc.com`
 
+[#install-run]
 === Running the installation
 
 1. Provide the properties in `install_cleanup_vars.sh`, i.e.:
@@ -111,6 +114,7 @@ Then run the `install.sh` script:
 
 If you want to manually install Bobbycar in your own environment (step-by-step), please follow these https://github.com/sa-mw-dach/bobbycar/tree/master/helm[installation instructions!]
 
+[#install-cleanup]
 === Clean up the installation
 
 Run the `cleanup.sh` script to uninstall the solution pattern

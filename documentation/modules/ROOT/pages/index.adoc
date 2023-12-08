@@ -1,4 +1,4 @@
-= Solution Patterns: Template Name
+= Red Hat Connected Vehicle Architecture
 :page-layout: home
 :sectnums:
 :sectlinks:
