@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: Solution Patterns for Cloud Native Architectures</title>
+    <title>Solution Patterns: Template Name :: Solution Patterns for Cloud Native Architectures</title>
     <link rel="canonical" href="https://redhat-solution-patterns.github.io/solution-patterns/solution-pattern-template/01-pattern.html">
-    <link rel="prev" href="index.html">
-    <link rel="next" href="index.html#_content_overview">
+    <link rel="next" href="02-architecture.html">
     <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
 <link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
@@ -59,28 +58,25 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="index.html" class=" query-params-link">Template Tutorial</a></h3>
+    <h3 class="title"><a href="01-pattern.html" class=" query-params-link">Connected Vehicle Architecture</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">1. Home page</a>
+    <a class="nav-link" href="01-pattern.html">1. Home page</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="index.html#use-cases">1.1 Use cases</a>
+    <a class="nav-link" href="#story-behind">1.1 The story behind this solution pattern</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#_the_story_behind_this_solution_pattern">1.2 The story behind this solution pattern</a>
+    <a class="nav-link" href="#cloud-native-approach">1.2 In-Vehicle cloud-native approach</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#_the_solution">1.3 The solution</a>
+    <a class="nav-link" href="#use-cases">1.3 Use cases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="index.html#_content_overview">1.4 Content Overview</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="index.html#_content_overview">1.5 Explore more solution patterns</a>
+    <a class="nav-link" href="#more-pattern">1.4 Explore more solution patterns</a>
   </li>
 </ul>
   </li>
@@ -89,13 +85,22 @@
     <a class="nav-link" href="02-architecture.html">2. Architecture</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="02-architecture.html#tech_stack">2.1. Technology stack</a>
+    <a class="nav-link" href="02-architecture.html#core_concepts">2.1. Core Concepts</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="02-architecture.html#in_depth">2.2. An in-depth look at the solution&#8217;s architecture</a>
+    <a class="nav-link" href="02-architecture.html#drogue_stack">2.2. Drogue Connectivity Stack</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="02-architecture.html#tech_stack">2.3. More about the technology stack</a>
+    <a class="nav-link" href="02-architecture.html#cloud_processing">2.3. Cloud side processing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-architecture.html#tech_stack">2.4. Technology stack</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-architecture.html#in_depth">2.5. An in-depth look at the solution&#8217;s architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-architecture.html#tech_stack">2.6. More about the technology stack</a>
   </li>
 </ul>
   </li>
@@ -154,15 +159,15 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Template Tutorial</span>
+    <span class="title">Connected Vehicle Architecture</span>
     <span class="version">master</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <span class="title">Template Tutorial</span>
+      <span class="title">Connected Vehicle Architecture</span>
       <ul class="versions">
         <li class="version is-current">
-          <a href="index.html">master</a>
+          <a href="01-pattern.html">master</a>
         </li>
       </ul>
     </li>
@@ -174,37 +179,213 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link"></a>
+  <a href="01-pattern.html" class="home-link is-current"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">Template Tutorial</a></li>
-    <li><a href="index.html">1. Home page</a></li>
-    <li><a href="#_the_story_behind_this_solution_pattern">1.2 The story behind this solution pattern</a></li>
+    <li><a href="01-pattern.html">Connected Vehicle Architecture</a></li>
+    <li><a href="01-pattern.html">1. Home page</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/redhat-solution-patterns/solution-pattern-website-template/edit/main/documentation/modules/ROOT/pages/01-pattern.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/ortwinschneider/connected-vehicle-architecture/edit/main/documentation/modules/ROOT/pages/01-pattern.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <article class="doc">
-<div class="sect1">
-<h2 id="_the_story_behind_this_solution_pattern"><a class="anchor" href="#_the_story_behind_this_solution_pattern"></a>The story behind this solution pattern</h2>
+<h1 class="page">Solution Patterns: Template Name</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>A description of the story that was used to build the demo and architectures of this SP.</p>
+<p>The <strong>Red Hat Connected Vehicle Architecture</strong> is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage.</p>
+</div>
+<div class="paragraph">
+<p>This architecture <strong>can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment</strong> supporting various use cases like <em>OTA deployments, Driver monitoring, AI/ML</em> and others.</p>
+</div>
+<div class="paragraph">
+<p>It aims to <strong>showcase an end-to-end workflow</strong>, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, <strong>training AI/ML models</strong> and deploying containers through a DevSecOps pipeline and by leveraging GitOps to the edge.</p>
+</div>
+<h2 id="_content_overview" class="discrete">Content overview</h2>
+<div class="tabset is-loading">
+<div class="ulist tabs">
+<ul>
+<li>
+<p><a id="tabset1_a-href-1-solution-pattern-a"></a><a href="#">1. Solution Pattern</a></p>
+</li>
+<li>
+<p><a id="tabset1_a-href-02-architecture-html-class-xref-page-2-architecture-a"></a><a href="02-architecture.html" class="xref page">2. Architecture</a></p>
+</li>
+<li>
+<p><a id="tabset1_a-href-03-demo-html-class-xref-page-3-demonstration-a"></a><a href="03-demo.html" class="xref page">3. Demonstration</a></p>
+</li>
+<li>
+<p><a id="tabset1_a-href-04-workshop-html-class-xref-page-4-workshop-a"></a><a href="04-workshop.html" class="xref page">4. Workshop</a></p>
+</li>
+<li>
+<p><a id="tabset1_a-href-5-developer-resources-a"></a><a href="#">5. Developer Resources</a></p>
+</li>
+</ul>
+</div>
+<div class="content">
+<div class="tab-pane" aria-labelledby="tabset1_a-href-1-solution-pattern-a">
+<div class="paragraph">
+<p><a href="#story-behind">1. The story behind this solution pattern</a><br>
+<a href="#cloud-native-approach">2. In-Vehicle cloud-native approach</a><br>
+<a href="#use-cases">3. Use cases</a><br>
+<a href="#more-pattern">4. Explore more solution patterns</a></p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_a-href-02-architecture-html-class-xref-page-2-architecture-a">
+<div class="paragraph">
+<p><a href="02-architecture.html#core_concepts" class="xref page">1. Core Concepts</a><br>
+<a href="02-architecture.html#drogue_stack" class="xref page">2. Drogue Connectivity Stack</a><br>
+<a href="02-architecture.html#cloud_processing" class="xref page">3. Cloud side processing</a><br>
+<a href="02-architecture.html#tech_stack" class="xref page">4. Technology stack</a><br>
+<a href="02-architecture.html#in_depth" class="xref page">5. An in-depth look at the solution&#8217;s architecture</a><br>
+<a href="02-architecture.html#tech_stack" class="xref page">6. More about the technology stack</a></p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_a-href-03-demo-html-class-xref-page-3-demonstration-a">
+<div class="paragraph">
+<p><a href="03-demo.html#_demonstration" class="xref page">1. Demonstration</a><br>
+<a href="03-demo.html#_walkthrough_guide" class="xref page">2. Walkthrough guide</a></p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_a-href-04-workshop-html-class-xref-page-4-workshop-a">
+<div class="paragraph">
+<p><a href="04-workshop.html#_installing_the_workshop_environment" class="xref page">1. Installing the workshop environment</a><br>
+<a href="04-workshop.html#_delivering_the_workshop" class="xref page">2. Delivering the workshop</a></p>
+</div>
+</div>
+<div class="tab-pane" aria-labelledby="tabset1_a-href-5-developer-resources-a">
+<div class="paragraph">
+<p><a href="https://developers.redhat.com/about" target="_blank" rel="noopener">1. Register</a> for Red Hat developers subscription to get access to Red Hat products for personal use at no cost<br>
+<a href="https://developers.redhat.com/products/openshift/overview" target="_blank" rel="noopener">2. Red Hat OpenShift</a><br>
+<a href="https://developers.redhat.com/products/quarkus/overview" target="_blank" rel="noopener">3. Quarkus</a><br></p>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Contributors:</strong> <em><a href="https://github.com/ortwinschneider">Ortwin Schneider (Red Hat)</a></em></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_solution"><a class="anchor" href="#_the_solution"></a>The Solution</h2>
+<h2 id="story-behind"><a class="anchor" href="#story-behind"></a><a class="link" href="#story-behind">1. The story behind this solution pattern</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This is a summary of the solution</p>
+<p>To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the software-defined vehicle (SDV)—a vehicle whose features and functions are primarily supported and upgradable through software.</p>
+</div>
+<div class="paragraph">
+<p>The advancement of SDVs brings along benefits, including increased comfort and safety with automated driving, personalized driver experiences, and support for new revenue streams.</p>
+</div>
+<div class="paragraph">
+<p>But the realization of SDVs comes with many challenges related to software architecture, safety certification, cybersecurity, software reusability, and an available talent pool.</p>
+</div>
+<div class="paragraph">
+<p>A strong open source strategy not only complements existing models in the industry but also has the very potential to help automakers address oncoming challenges and emerge as industry leaders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-native-approach"><a class="anchor" href="#cloud-native-approach"></a><a class="link" href="#cloud-native-approach">2. In-Vehicle Cloud-native approach</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It&#8217;s not only about in-vehicle architecture anymore, it&#8217;s about the digital life cycle. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.</p>
+</div>
+<div class="paragraph">
+<p>Microservices’ architecture inherently supports cloud-native development. In addition to container and microservices technologies, the actualization of cloud-native includes application definition, orchestration, management, runtime, provisioning, and mainly DevOps—a set of tools and practices that support, automate, and speed up continuous integration and continuous delivery (CI/CD) and deployment of cloud-based applications.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-cases"><a class="anchor" href="#use-cases"></a><a class="link" href="#use-cases">3. Use cases</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Common use cases that can be address with this architecture are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Connecting vehicles to a Hybrid Cloud Backend</p>
+</li>
+<li>
+<p>Applying location based configuration to a fleet of devices (vehicles)</p>
+</li>
+<li>
+<p>Realtime Stream Aggregation</p>
+</li>
+<li>
+<p>Processing IoT data with OpenShift Serverless</p>
+</li>
+<li>
+<p>Implementing Over-the-Air (OTA) updates</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="more-pattern"><a class="anchor" href="#more-pattern"></a><a class="link" href="#more-pattern">4. Explore more solution patterns</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It&#8217;s time to boost your cloud-native application architectural design with bleeding-edge technology backed by open-source software. Explore the use cases and learn recommended solutions for each of these challenges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application Modernization</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-modernization-cdc/">Adopting Change Data Capture for stack modernization</a></p>
+</li>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-enhancing-applications">Enhancing Applications with Application Services</a></p>
+</li>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-apim-servicemesh/comprehensive-service-architecture">Comprehensive Service Architecture with API Management and Service Mesh</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>DevOps</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-multicloud-gitops-odf/">MultiCloud GitOps with ArgoCD, OpenShift Advanced Cluster Management and OpenShift Data Foundation</a></p>
+</li>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-instant-multicloud/solution-pattern-instant-multicloud/index.html">Instant Multi Cloud - Openshift Everywhere</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Managed Openshift</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-modernize-with-rosa/solution-pattern-rosa/index.html">Accelerate time to value with Red Hat Openshift Service on AWS</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Intelligent Applications</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://redhat-solution-patterns.github.io/solution-pattern-sentiment-analysis">Building Sentiment Analysis with AIML and Kafka</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="index.html" class="query-params-link">1. Home page</a></span>
-  <span class="next"><a href="index.html#_content_overview" class="query-params-link">1.4 Content Overview</a></span>
+  <span class="next"><a href="02-architecture.html" class="query-params-link">2. Architecture</a></span>
 </nav>
 </article>
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
