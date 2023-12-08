@@ -38,7 +38,7 @@ Before executing the `install.sh` script, make sure you have the following ready
 
 1. Provide the properties in `install_cleanup_vars.sh`, i.e.:
 
-[source,console]
+[source,shell script]
 ----
 # The namespace to deploy the solution pattern in
 NAMESPACE=bobbycar
@@ -93,7 +93,8 @@ operators in the local namespace you'll deploy this solution pattern into.
 When using https://developers.redhat.com/products/openshift-local/overview[OpenShift Local],
 you can use the following values:
 
-[source,console]
+[.console-input]
+[source,bash]
 ----
 NAMESPACE=bobbycar
 APP_DOMAIN=apps-crc.testing
@@ -102,7 +103,8 @@ API_DOMAIN=api-crc-testing
 
 Then run the `install.sh` script:
 
-[source,console]
+[.console-input]
+[source,bash]
 ----
   ./install.sh 
 ----
@@ -115,7 +117,8 @@ Run the `cleanup.sh` script to uninstall the solution pattern
 
 If you also want to remove the `BobbycarZone CRD`, set `DELETE_CRD=true` in the `install_cleanup_vars.sh` script.
 
-[source,console]
+[.console-input]
+[source,bash]
 ----
   ./cleanup.sh 
 ----

@@ -12,6 +12,8 @@ It aims to *showcase an end-to-end workflow*, from connecting RHIVOS to the clou
 
 include::content-overview.adoc[]
 
+*Contributors:* _https://github.com/ortwinschneider[Ortwin Schneider (Red Hat)]_
+
 [#story-behind]
 == The story behind this solution pattern
 To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the software-defined vehicle (SDV)—a vehicle whose features and functions are primarily supported and upgradable through software. 
