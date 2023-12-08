@@ -79,4 +79,11 @@ Technical description including all or some of the following: architecture ir ed
 [#more_tech]
 == About the Technology Stack
 
+=== Apache Kafka
+
+=== MQTT Broker
+
+=== Apache Camel-K
+
+
 If you want to include more details about the tech stack you used, this is the place.
