@@ -4,19 +4,28 @@
 :sectlinks:
 :doctype: book
 
-The *Red Hat Connected Vehicle Architecture* is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage. 
-
-This architecture *can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment* supporting various use cases like _OTA deployments, Driver monitoring, AI/ML_ and others.
-
-It aims to *showcase an end-to-end workflow*, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, *training AI/ML models* and deploying containers through a DevSecOps pipeline and by leveraging GitOps to the edge.
-
 include::content-overview.adoc[]
 
 *Contributors:* _https://github.com/ortwinschneider[Ortwin Schneider (Red Hat)]_
 
+[#overview]
+== Overview
+
+The *Red Hat Connected Vehicle Architecture* is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage. 
+
+This architecture *can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment* supporting various use cases like _OTA deployments, Driver monitoring, AI/ML_ and others.
+
+It aims to *showcase an end-to-end workflow*, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, *training AI/ML models* and deploying containers through a DevSecOps pipeline to the edge.
+
 [#story-behind]
 == The story behind this solution pattern
-To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the software-defined vehicle (SDV)—a vehicle whose features and functions are primarily supported and upgradable through software. 
+
+image::car-platform.jpg[width=70%] 
+
+[#sdv]
+=== Software Defined Vehicles
+
+To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the *software-defined vehicle (SDV)*—a vehicle whose features and functions are primarily supported and upgradable through software. 
 
 The advancement of SDVs brings along benefits, including increased comfort and safety with automated driving, personalized driver experiences, and support for new revenue streams. 
 
@@ -25,20 +34,38 @@ But the realization of SDVs comes with many challenges related to software archi
 A strong open source strategy not only complements existing models in the industry but also has the very potential to help automakers address oncoming challenges and emerge as industry leaders.
 
 [#cloud-native-approach]
-== In-Vehicle Cloud-native approach
-It's not only about in-vehicle architecture anymore, it's about the digital life cycle. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.
+=== In-Vehicle Cloud-native approach
+It's not only about in-vehicle architecture anymore, it's about the *digital life cycle*. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.
 
 Microservices’ architecture inherently supports cloud-native development. In addition to container and microservices technologies, the actualization of cloud-native includes application definition, orchestration, management, runtime, provisioning, and mainly DevOps—a set of tools and practices that support, automate, and speed up continuous integration and continuous delivery (CI/CD) and deployment of cloud-based applications. 
 
+[#containers-on-wheels]
+=== Containers on Wheels
+Containers have become the de facto standard in the wider IT industry, and they are *front and center in the vision of the software-defined vehicle*, allowing for applications to be isolated, providing more flexibility for developers and deployment, and generally allowing for faster innovation. Red Hat leads the work on containers in the cloud, and now it’s time to take that expertise to the automotive industry.
+
+One of Red Hat's contribution in SDV is the link:https://www.redhat.com/en/blog/new-standard-red-hat-vehicle-operating-system-modern-and-future-vehicles[Red hat In-Vehicle Operating System (RHIVOS)]. Red Hat In-Vehicle Operating System is a Linux-based automotive solution developed, maintained, and designed with the intent of continuous functional safety. Its mission is to deliver an open, safety-and security-focused Linux-based in-vehicle OS as the foundation for SDV to drive advanced innovation. Vehicle manufacturers and partners across the automotive ecosystem gain greater flexibility to focus on delivering innovative driving experiences throughout a vehicle's life cycle.
+
 [#use-cases]
 == Use cases
-Common use cases that can be address with this architecture are:
+Common *use cases that can be addressed with this architecture* are:
 
-- Connecting vehicles to a Hybrid Cloud Backend
+- Connecting vehicles (specific edge devices) to a Hybrid Cloud Backend
 - Applying location based configuration to a fleet of devices (vehicles)
-- Realtime Stream Aggregation
-- Processing IoT data with OpenShift Serverless
+- Collecting data for AI/ML model training
+- Realtime Stream Aggregation and data processing
+- Handling IoT event data with OpenShift Serverless
 - Implementing Over-the-Air (OTA) updates
+
+[#redhat-help]
+== How Red Hat can help?
+Red Hat supports vehicle manufacturers’ goals of getting to market faster and adopting new business models through:
+
+- Accelerating transformation with an open source, enterprise-grade, *Linux-based in-vehicle platform* that supports safety- and non-safety-related applications. 
+- Empowering safer, intelligent vehicles with *cutting-edge onboard and off-board solutions* that adapt to evolving needs and technologies, enhancing driving experience and safety while increasing reliability.
+- Building *expansive ecosystems* and a common approach to standards through the power of the open source community that meets changing automotive business needs.
+- *Supporting the vehicle’s digital life cycle* with an enterprise-grade, long-term support model.
+
+Please visit the link:https://www.redhat.com/en/solutions/automotive[Red Hat automotive page, window=_blank] to get more indormation.
 
 [#more-pattern]
 == Explore more solution patterns

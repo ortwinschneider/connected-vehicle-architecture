@@ -1,7 +1,11 @@
 * xref:01-pattern.adoc[{counter:module}. Home page]
+** xref:01-pattern.adoc#overview[{module}.{counter:submodule1} Overview]
 ** xref:01-pattern.adoc#story-behind[{module}.{counter:submodule1} The story behind this solution pattern]
-** xref:01-pattern.adoc#cloud-native-approach[{module}.{counter:submodule1} In-Vehicle cloud-native approach]
+*** xref:01-pattern.adoc#sdv[{module}.{counter:submodule1} Software Defined Vehicles]
+*** xref:01-pattern.adoc#cloud-native-approach[{module}.{counter:submodule1} In-Vehicle cloud-native approach]
+*** xref:01-pattern.adoc#containers-on-wheels[{module}.{counter:submodule1} Containers on Wheels]
 ** xref:01-pattern.adoc#use-cases[{module}.{counter:submodule1} Use cases]
+** xref:01-pattern.adoc#redhat-help[{module}.{counter:submodule1} How Red Hat can help?]
 ** xref:01-pattern.adoc#more-pattern[{module}.{counter:submodule1} Explore more solution patterns]
 
 * xref:02-architecture.adoc[{counter:module}. Architecture]

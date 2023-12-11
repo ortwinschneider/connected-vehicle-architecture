@@ -5,9 +5,10 @@
 ====
 xref:01-pattern.adoc[{counter:module}. Solution Pattern]::
 +
+xref:01-pattern.adoc#overview[{counter:submodule1}. Overview] +
 xref:01-pattern.adoc#story-behind[{counter:submodule1}. The story behind this solution pattern] +
-xref:01-pattern.adoc#cloud-native-approach[{counter:submodule1}. In-Vehicle cloud-native approach] +
 xref:01-pattern.adoc#use-cases[{counter:submodule1}. Use cases] +
+xref:01-pattern.adoc#redhat-help[{counter:submodule1}. How Red Hat can help?] +
 xref:01-pattern.adoc#more-pattern[{counter:submodule1}. Explore more solution patterns]
 +
 xref:02-architecture.adoc[{counter:module}. Architecture]::
@@ -26,6 +27,9 @@ xref:03-demo.adoc#installation[{counter:submodule3}. Installation]
 +
 xref:#[{counter:module}. Further Information]::
 +
-link:https://www.redhat.com/en/resources/excelfore-standardize-automotive-ota-updates-overview[{counter:submodule4}. Excelfore and Red Hat standardize automotive OTA updates] +
+link:https://www.redhat.com/en/resources/excelfore-standardize-automotive-ota-updates-overview[{counter:submodule4}. Excelfore and Red Hat standardize automotive OTA updates,window=_blank] + 
+link:https://www.redhat.com/en/solutions/automotive[{counter:submodule4}. Red Hat Automotive Homepage,window=_blank] +
+link:https://www.redhat.com/en/blog/running-containers-cars[{counter:submodule4}. Running containers in cars, window=_blank] + 
+link:https://www.redhat.com/sysadmin/speed-containers-podman-raspberry-pi[{counter:submodule4}. How we achieved a 6-fold increase in Podman startup speed,window=_blank] + 
 + 
 ====

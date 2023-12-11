@@ -53,6 +53,26 @@ The updated zone configuration is not pushed into the vehicles, but rather the v
 By using Kafka Mirror Maker, the incoming data from the regional Kafka clusters is transferred to the Kafka clusters in the central IoT cloud in order to persist an aggregated status across all locations and, for example, to carry out stream analytics on this basis.
 Furthermore, the relevant data from the regional Kafka clusters is stored in an S3 compatible data lake in the central IoT cloud, and is then used for machine learning with, for example, Red Hat OpenShift AI.
 
+
+[#in_depth]
+== An in-depth look at the solution's architecture
+
+image::ocp-topology.png[width=100%]
+
+=== car-simulator component
+
+=== dashboard component
+
+=== ota-server component
+
+=== kafka2datagrid component
+
+=== Apache Kafka
+
+=== MQTT Broker
+
+=== Apache Camel-K
+
 [#tech_stack]
 == Technology Stack
 
@@ -69,21 +89,3 @@ Furthermore, the relevant data from the regional Kafka clusters is stored in an 
 * Other:
 ** https://helm.sh/[Helm]
 ** Angular
-
-
-[#in_depth]
-== An in-depth look at the solution's architecture
-
-Technical description including all or some of the following: architecture ir ed diagrams. In-depth details of the decisions made and solutions used. Description of each service and what it is used for. Description of any integration.
-
-[#more_tech]
-== About the Technology Stack
-
-=== Apache Kafka
-
-=== MQTT Broker
-
-=== Apache Camel-K
-
-
-If you want to include more details about the tech stack you used, this is the place.
