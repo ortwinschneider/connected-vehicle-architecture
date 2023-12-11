@@ -68,16 +68,31 @@
     <a class="nav-link" href="01-pattern.html">1. Home page</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="01-pattern.html#story-behind">1.1 The story behind this solution pattern</a>
+    <a class="nav-link" href="01-pattern.html#overview">1.1 Overview</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="01-pattern.html#cloud-native-approach">1.2 In-Vehicle cloud-native approach</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="01-pattern.html#story-behind">1.2 The story behind this solution pattern</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="01-pattern.html#sdv">1.3 Software Defined Vehicles</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="01-pattern.html#cloud-native-approach">1.4 In-Vehicle cloud-native approach</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="01-pattern.html#containers-on-wheels">1.5 Containers on Wheels</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="01-pattern.html#use-cases">1.3 Use cases</a>
+    <a class="nav-link" href="01-pattern.html#use-cases">1.6 Use cases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="01-pattern.html#more-pattern">1.4 Explore more solution patterns</a>
+    <a class="nav-link" href="01-pattern.html#redhat-help">1.7 How Red Hat can help?</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="01-pattern.html#more-pattern">1.8 Explore more solution patterns</a>
   </li>
 </ul>
   </li>
@@ -256,7 +271,45 @@ Furthermore, the relevant data from the regional Kafka clusters is stored in an 
 </div>
 </div>
 <div class="sect1">
-<h2 id="tech_stack"><a class="anchor" href="#tech_stack"></a><a class="link" href="#tech_stack">4. Technology Stack</a></h2>
+<h2 id="in_depth"><a class="anchor" href="#in_depth"></a><a class="link" href="#in_depth">4. An in-depth look at the solution&#8217;s architecture</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/ocp-topology.png" alt="ocp topology" width="100%">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_car_simulator_component"><a class="anchor" href="#_car_simulator_component"></a><a class="link" href="#_car_simulator_component">4.1. car-simulator component</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_dashboard_component"><a class="anchor" href="#_dashboard_component"></a><a class="link" href="#_dashboard_component">4.2. dashboard component</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_ota_server_component"><a class="anchor" href="#_ota_server_component"></a><a class="link" href="#_ota_server_component">4.3. ota-server component</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_kafka2datagrid_component"><a class="anchor" href="#_kafka2datagrid_component"></a><a class="link" href="#_kafka2datagrid_component">4.4. kafka2datagrid component</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_apache_kafka"><a class="anchor" href="#_apache_kafka"></a><a class="link" href="#_apache_kafka">4.5. Apache Kafka</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_mqtt_broker"><a class="anchor" href="#_mqtt_broker"></a><a class="link" href="#_mqtt_broker">4.6. MQTT Broker</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_apache_camel_k"><a class="anchor" href="#_apache_camel_k"></a><a class="link" href="#_apache_camel_k">4.7. Apache Camel-K</a></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tech_stack"><a class="anchor" href="#tech_stack"></a><a class="link" href="#tech_stack">5. Technology Stack</a></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -309,33 +362,6 @@ Furthermore, the relevant data from the regional Kafka clusters is stored in an 
 </div>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="in_depth"><a class="anchor" href="#in_depth"></a><a class="link" href="#in_depth">5. An in-depth look at the solution&#8217;s architecture</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Technical description including all or some of the following: architecture ir ed diagrams. In-depth details of the decisions made and solutions used. Description of each service and what it is used for. Description of any integration.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="more_tech"><a class="anchor" href="#more_tech"></a><a class="link" href="#more_tech">6. About the Technology Stack</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_apache_kafka"><a class="anchor" href="#_apache_kafka"></a><a class="link" href="#_apache_kafka">6.1. Apache Kafka</a></h3>
-
-</div>
-<div class="sect2">
-<h3 id="_mqtt_broker"><a class="anchor" href="#_mqtt_broker"></a><a class="link" href="#_mqtt_broker">6.2. MQTT Broker</a></h3>
-
-</div>
-<div class="sect2">
-<h3 id="_apache_camel_k"><a class="anchor" href="#_apache_camel_k"></a><a class="link" href="#_apache_camel_k">6.3. Apache Camel-K</a></h3>
-<div class="paragraph">
-<p>If you want to include more details about the tech stack you used, this is the place.</p>
-</div>
 </div>
 </div>
 </div>

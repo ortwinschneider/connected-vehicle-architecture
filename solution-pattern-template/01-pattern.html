@@ -67,16 +67,31 @@
     <a class="nav-link" href="01-pattern.html">1. Home page</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#story-behind">1.1 The story behind this solution pattern</a>
+    <a class="nav-link" href="#overview">1.1 Overview</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#cloud-native-approach">1.2 In-Vehicle cloud-native approach</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#story-behind">1.2 The story behind this solution pattern</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#sdv">1.3 Software Defined Vehicles</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#cloud-native-approach">1.4 In-Vehicle cloud-native approach</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#containers-on-wheels">1.5 Containers on Wheels</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#use-cases">1.3 Use cases</a>
+    <a class="nav-link" href="#use-cases">1.6 Use cases</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#more-pattern">1.4 Explore more solution patterns</a>
+    <a class="nav-link" href="#redhat-help">1.7 How Red Hat can help?</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#more-pattern">1.8 Explore more solution patterns</a>
   </li>
 </ul>
   </li>
@@ -172,15 +187,6 @@
 <h1 class="page">Red Hat Connected Vehicle Architecture</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>The <strong>Red Hat Connected Vehicle Architecture</strong> is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage.</p>
-</div>
-<div class="paragraph">
-<p>This architecture <strong>can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment</strong> supporting various use cases like <em>OTA deployments, Driver monitoring, AI/ML</em> and others.</p>
-</div>
-<div class="paragraph">
-<p>It aims to <strong>showcase an end-to-end workflow</strong>, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, <strong>training AI/ML models</strong> and deploying containers through a DevSecOps pipeline and by leveraging GitOps to the edge.</p>
-</div>
 <h2 id="_content_overview" class="discrete">Content overview</h2>
 <div class="tabset is-loading">
 <div class="ulist tabs">
@@ -202,10 +208,11 @@
 <div class="content">
 <div class="tab-pane" aria-labelledby="tabset1_a-href-1-solution-pattern-a">
 <div class="paragraph">
-<p><a href="#story-behind">1. The story behind this solution pattern</a><br>
-<a href="#cloud-native-approach">2. In-Vehicle cloud-native approach</a><br>
+<p><a href="#overview">1. Overview</a><br>
+<a href="#story-behind">2. The story behind this solution pattern</a><br>
 <a href="#use-cases">3. Use cases</a><br>
-<a href="#more-pattern">4. Explore more solution patterns</a></p>
+<a href="#redhat-help">4. How Red Hat can help?</a><br>
+<a href="#more-pattern">5. Explore more solution patterns</a></p>
 </div>
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_a-href-02-architecture-html-class-xref-page-2-architecture-a">
@@ -226,7 +233,10 @@
 </div>
 <div class="tab-pane" aria-labelledby="tabset1_a-href-4-further-information-a">
 <div class="paragraph">
-<p><a href="https://www.redhat.com/en/resources/excelfore-standardize-automotive-ota-updates-overview">1. Excelfore and Red Hat standardize automotive OTA updates</a><br></p>
+<p><a href="https://www.redhat.com/en/resources/excelfore-standardize-automotive-ota-updates-overview" target="_blank" rel="noopener">1. Excelfore and Red Hat standardize automotive OTA updates</a><br>
+<a href="https://www.redhat.com/en/solutions/automotive" target="_blank" rel="noopener">2. Red Hat Automotive Homepage</a><br>
+<a href="https://www.redhat.com/en/blog/running-containers-cars" target="_blank" rel="noopener">3. Running containers in cars</a><br>
+<a href="https://www.redhat.com/sysadmin/speed-containers-podman-raspberry-pi" target="_blank" rel="noopener">4. How we achieved a 6-fold increase in Podman startup speed</a><br></p>
 </div>
 </div>
 </div>
@@ -237,10 +247,31 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="story-behind"><a class="anchor" href="#story-behind"></a><a class="link" href="#story-behind">1. The story behind this solution pattern</a></h2>
+<h2 id="overview"><a class="anchor" href="#overview"></a><a class="link" href="#overview">1. Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the software-defined vehicle (SDV)—a vehicle whose features and functions are primarily supported and upgradable through software.</p>
+<p>The <strong>Red Hat Connected Vehicle Architecture</strong> is a Red Hat solution pattern that implements key aspects of a modern IoT/Edge architecture in an exemplary manner. It uses OpenShift and various middleware components optimized for a cloud-native usage.</p>
+</div>
+<div class="paragraph">
+<p>This architecture <strong>can serve as a foundation for an IoT/Edge or a Software Defined Vehicle Hybrid Cloud environment</strong> supporting various use cases like <em>OTA deployments, Driver monitoring, AI/ML</em> and others.</p>
+</div>
+<div class="paragraph">
+<p>It aims to <strong>showcase an end-to-end workflow</strong>, from connecting RHIVOS to the cloud backend, processing telemetry data in batch or as stream, <strong>training AI/ML models</strong> and deploying containers through a DevSecOps pipeline to the edge.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="story-behind"><a class="anchor" href="#story-behind"></a><a class="link" href="#story-behind">2. The story behind this solution pattern</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/car-platform.jpg" alt="car platform" width="70%">
+</div>
+</div>
+<div class="sect2">
+<h3 id="sdv"><a class="anchor" href="#sdv"></a><a class="link" href="#sdv">2.1. Software Defined Vehicles</a></h3>
+<div class="paragraph">
+<p>To meet consumer and driver expectations, automakers are finding the need to transform from hardware-centric vehicle architecture into a software-centric design to manage the growing complexity of domain-specific systems. At the core of this transformation lies the concept of the <strong>software-defined vehicle (SDV)</strong>—a vehicle whose features and functions are primarily supported and upgradable through software.</p>
 </div>
 <div class="paragraph">
 <p>The advancement of SDVs brings along benefits, including increased comfort and safety with automated driving, personalized driver experiences, and support for new revenue streams.</p>
@@ -252,15 +283,23 @@
 <p>A strong open source strategy not only complements existing models in the industry but also has the very potential to help automakers address oncoming challenges and emerge as industry leaders.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="cloud-native-approach"><a class="anchor" href="#cloud-native-approach"></a><a class="link" href="#cloud-native-approach">2. In-Vehicle Cloud-native approach</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="cloud-native-approach"><a class="anchor" href="#cloud-native-approach"></a><a class="link" href="#cloud-native-approach">2.2. In-Vehicle Cloud-native approach</a></h3>
 <div class="paragraph">
-<p>It&#8217;s not only about in-vehicle architecture anymore, it&#8217;s about the digital life cycle. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.</p>
+<p>It&#8217;s not only about in-vehicle architecture anymore, it&#8217;s about the <strong>digital life cycle</strong>. With increased connectivity, vehicles can communicate with their environment, collect, and exchange a huge amount of data in real-time, and support cloud-native development approaches. The cloud-native approach allows the industry to continuously develop and test vehicle software in a cloud environment and remotely deploy updates throughout the vehicle life cycle using over-the-air (OTA) updates.</p>
 </div>
 <div class="paragraph">
 <p>Microservices’ architecture inherently supports cloud-native development. In addition to container and microservices technologies, the actualization of cloud-native includes application definition, orchestration, management, runtime, provisioning, and mainly DevOps—a set of tools and practices that support, automate, and speed up continuous integration and continuous delivery (CI/CD) and deployment of cloud-based applications.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="containers-on-wheels"><a class="anchor" href="#containers-on-wheels"></a><a class="link" href="#containers-on-wheels">2.3. Containers on Wheels</a></h3>
+<div class="paragraph">
+<p>Containers have become the de facto standard in the wider IT industry, and they are <strong>front and center in the vision of the software-defined vehicle</strong>, allowing for applications to be isolated, providing more flexibility for developers and deployment, and generally allowing for faster innovation. Red Hat leads the work on containers in the cloud, and now it’s time to take that expertise to the automotive industry.</p>
+</div>
+<div class="paragraph">
+<p>One of Red Hat&#8217;s contribution in SDV is the <a href="https://www.redhat.com/en/blog/new-standard-red-hat-vehicle-operating-system-modern-and-future-vehicles">Red hat In-Vehicle Operating System (RHIVOS)</a>. Red Hat In-Vehicle Operating System is a Linux-based automotive solution developed, maintained, and designed with the intent of continuous functional safety. Its mission is to deliver an open, safety-and security-focused Linux-based in-vehicle OS as the foundation for SDV to drive advanced innovation. Vehicle manufacturers and partners across the automotive ecosystem gain greater flexibility to focus on delivering innovative driving experiences throughout a vehicle&#8217;s life cycle.</p>
+</div>
 </div>
 </div>
 </div>
@@ -268,21 +307,24 @@
 <h2 id="use-cases"><a class="anchor" href="#use-cases"></a><a class="link" href="#use-cases">3. Use cases</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Common use cases that can be address with this architecture are:</p>
+<p>Common <strong>use cases that can be addressed with this architecture</strong> are:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Connecting vehicles to a Hybrid Cloud Backend</p>
+<p>Connecting vehicles (specific edge devices) to a Hybrid Cloud Backend</p>
 </li>
 <li>
 <p>Applying location based configuration to a fleet of devices (vehicles)</p>
 </li>
 <li>
-<p>Realtime Stream Aggregation</p>
+<p>Collecting data for AI/ML model training</p>
 </li>
 <li>
-<p>Processing IoT data with OpenShift Serverless</p>
+<p>Realtime Stream Aggregation and data processing</p>
+</li>
+<li>
+<p>Handling IoT event data with OpenShift Serverless</p>
 </li>
 <li>
 <p>Implementing Over-the-Air (OTA) updates</p>
@@ -292,7 +334,34 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="more-pattern"><a class="anchor" href="#more-pattern"></a><a class="link" href="#more-pattern">4. Explore more solution patterns</a></h2>
+<h2 id="redhat-help"><a class="anchor" href="#redhat-help"></a><a class="link" href="#redhat-help">4. How Red Hat can help?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red Hat supports vehicle manufacturers’ goals of getting to market faster and adopting new business models through:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Accelerating transformation with an open source, enterprise-grade, <strong>Linux-based in-vehicle platform</strong> that supports safety- and non-safety-related applications.</p>
+</li>
+<li>
+<p>Empowering safer, intelligent vehicles with <strong>cutting-edge onboard and off-board solutions</strong> that adapt to evolving needs and technologies, enhancing driving experience and safety while increasing reliability.</p>
+</li>
+<li>
+<p>Building <strong>expansive ecosystems</strong> and a common approach to standards through the power of the open source community that meets changing automotive business needs.</p>
+</li>
+<li>
+<p><strong>Supporting the vehicle’s digital life cycle</strong> with an enterprise-grade, long-term support model.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Please visit the <a href="https://www.redhat.com/en/solutions/automotive" target="_blank" rel="noopener">Red Hat automotive page</a> to get more indormation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="more-pattern"><a class="anchor" href="#more-pattern"></a><a class="link" href="#more-pattern">5. Explore more solution patterns</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>It&#8217;s time to boost your cloud-native application architectural design with bleeding-edge technology backed by open-source software. Explore the use cases and learn recommended solutions for each of these challenges:</p>
