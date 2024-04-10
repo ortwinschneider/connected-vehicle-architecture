@@ -23,4 +23,4 @@
 *** xref:03-demo.adoc#install-run[{module}.{counter:submodule3}. Installing the demo]
 *** xref:03-demo.adoc#install-cleanup[{module}.{counter:submodule3}. Cleaning up]
 
-* https://redhat-solution-patterns.github.io/[{counter:module}. Other Red Hat Solution Patterns]
+* https://redhat-solution-patterns.github.io/[{counter:module}. Other Red Hat Solution Patterns,window=_blank]
