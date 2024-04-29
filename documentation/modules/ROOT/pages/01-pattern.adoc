@@ -4,8 +4,6 @@
 :sectlinks:
 :doctype: book
 
-include::content-overview.adoc[]
-
 *Contributors:* _https://github.com/ortwinschneider[Ortwin Schneider (Red Hat)]_
 
 [#overview]
